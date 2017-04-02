@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es" ng-app = "ctdApp">
+<head>
+    <link rel="stylesheet" type="text/css" href="ctdstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <title>Puntitos</title>
+</head>
+
+
+<body ng-controller="MainController as main">
+
+  <h2>{{main.txt.titulo}}</h2>
+
+  <div id="score" ng-style="main.scorestyle">
+    <p style="float: left;">Tú: {{main.txt.j1}}</p>
+    <p style="float: right;">Computador: {{main.txt.j2}}</p>
+  </div>
+
+  <div id="board" ng-style="main.boardstyle"> 
+    <div ng-repeat="o in main.objs">
+        <div ng-class="o.clase" ng-style="o.color" ng-mouseover="o.hoveron()" ng-mouseleave="o.hoveroff()" ng-click="o.click()"></div>
+    </div>
+  </div>
+    
+</body>
+</html>

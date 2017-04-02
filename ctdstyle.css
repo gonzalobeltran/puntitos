@@ -1,0 +1,48 @@
+h2, p {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+div.dot {
+    border-radius: 50%;
+    background-color: black;
+    height: 2vmin;
+    width: 2vmin;
+    float: left;
+}
+
+div.hline {
+    border-radius: 30%;
+    height: 2vmin;
+    width: 10vmin;
+    float: left;
+}
+
+div.vline {
+    border-radius: 30%;
+    height: 10vmin;
+    width: 2vmin;
+    float: left;
+}
+
+div.empty {
+    border-radius: 20%;
+    height: 10vmin;
+    width: 10vmin;
+    float: left;
+}
+
+#score {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+}
+
+#board {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vmin;
+    background-color: aliceblue;
+    border-color: lightgrey;
+    border-style: solid;
+}
